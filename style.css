@@ -15,21 +15,149 @@ margin: 0;
 
 }
 .myCard{
-    background-color: #ab6565 !important;
+    background: linear-gradient(
+    120deg,
+    #0f0c29,
+    #1a1a40,
+    #2c2c54,
+    #0b0f1a
+  );
+  border: none !important;
 
+    }
+    .imgg{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  width: 100%;
+  
+}
+.imG{
     
+    width:50%;
+    display: flex;
+    justify-content: center;
     
     
     
 }
-.imG{
-    width:30%;
-    height: 30%;
+
+.imG img{
+    width: 50%;
+    
+   
+    }
+.clouds{
+  width: 50%;
+   display: flex;
+    justify-content: center;
+  
+}
+.inpt input{
+   
+    margin: 5px 20px;
+    border-radius: 20px !important;
+    background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+    
+
+}
+.inpt input::placeholder{
+    color: #EAEAEA ;
+}
+/* .inpt button{
+    background:transparent;
+    margin: 5px 20px;
+    border-radius: 20px !important;
+
+} */
+.temp{
     display: flex;
     justify-content: center;
 }
-.imG img{
-    width: 100%;
-    height: 100%;
-    
+.headr {
+  min-height: 100vh;
+  background: linear-gradient(
+    120deg,
+    #0b0f1a,
+    #1b2735,
+    #3a1c71,
+    #0f2027
+  );
+  background-size: 500% 500%;
+  animation: aurora 22s ease infinite;
+}
+
+@keyframes aurora {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.inpt button {
+  background: linear-gradient(135deg, #7f7cff, #5f5bff);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 5px 20px;
+    border-radius: 20px !important;
+  box-shadow: 0 8px 20px rgba(127, 124, 255, 0.35);
+  transition: all 0.25s ease;
+}
+
+.inpt button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(127, 124, 255, 0.5);
+}
+
+.inpt button:active {
+  transform: scale(0.96);
+}
+
+
+.temp{
+  color: #fff;
+
+
+}
+.humdty{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  height: 80px;
+}
+.cityname{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.humidity{
+  /* display: flex;
+  gap: 5px; */
+  
+}
+.humdty span{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+.humidity span img{
+  width: 20%;
+}
+.wind{
+  /* display: flex;
+  gap: 5px;
+  align-items: center; */
+  background: #000;
+}
+.wind img{
+  width: 20%;
+
 }

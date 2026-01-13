@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather-App</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- start -->
+    <header class="headr">
+      <div class="card myCard" style="width: 25rem">
+        <div class="input-group mb-3 inpt ">
+          <input id="city" type="text" class="form-control " placeholder="Enter Your City" aria-label="Enter Your City"/>
+          <button id="btn" class="btn btn-outline-primary" type="button">Search</button></div>
+        <div class="imgg"><div class="imG "><img src="Images/weather.png" alt="" class="imag"/></div>
+        <div class="clouds"><h1>clouds</h1></div>
+      </div>
+        <div class="temp"><h1>22</h1></div>
+        <div class="cityname"><h1>karachi</h1></div>
+       <div class="humdty"> <div class="humidity"><span><img src="Images/humidity.png" alt=""></span><span>humidity</span></div><div class="wind"><img src="Images/wind.png" alt=""><span>wind</span></div></div>
 
-<body>
+      </div>
+    </header>
 
-<header class="headr"> 
-    <div class="card myCard" style="width: 25rem;">
-        <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Enter Your City" aria-label="Enter Your City" aria-describedby="button-addon2">
-  <button class="btn btn-outline-primary" type="button" id="button-addon2">Search</button>
-</div>
-<div class="imG"><img src="Images/weather.png" alt=""></div>
-        
- 
-</div></header>
-
-
+    <!-- end -->
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
